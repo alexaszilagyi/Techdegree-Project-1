@@ -69,7 +69,7 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 3px solid white;
   transition: all .5s;
 }
@@ -140,6 +140,15 @@ ul.morals {
 .skills li:nth-child(odd) {
   background: #F3622C;
   color: white;
+}
+
+.card-image {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 40px auto 25px;
+  border-radius: 20%;
+  border: 3px solid #F3622C;
 }
 
 footer {
@@ -218,6 +227,10 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
+  }
+
+  .card-image {
+    width: 60%;
   }
 
   footer {
