@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #9E9E9E;
 }
 /* Link Styles */
 
@@ -18,7 +18,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #F3622C;
 }
 
 /* Section Styles */
@@ -52,7 +52,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
@@ -76,18 +76,16 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #F3622C;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 }
-.location {
-  background-color: #222;
-  color: yellow;
-}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -98,26 +96,50 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.large {
+  max-width: 700px;
+}
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #F3622C;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .85em;
+  color: #B2BABB;
+}
+
+h3 span {
+  font-weight: 700;
+  color: #F3622C;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 ul.skills {
   padding: 0;
-  text-align: center;
 }
 
-.skills li {
+ul.morals {
+  list-style-position: outside;
+}
+
+.skills li,
+.morals li {
   border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #F3622C;
+  color: white;
 }
 
 footer {
@@ -144,6 +166,7 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
+  /* NTS: I would like to explore and understand why we're doing the text-indent. */
   margin-left: 5px;
   width: 30px;
   height: 30px;
